@@ -26,8 +26,9 @@ for(var i=0; i< nums.length; i++){
         count ++
     }
 
-}
+}return count
     
 }
-
+var x = countEvenNegatives(nums1);
+console.log(x);
 /*****************************************************************************/
