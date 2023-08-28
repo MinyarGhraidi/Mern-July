@@ -28,7 +28,6 @@ module.exports.findOne = (req,res) =>{
 
 // create one Facture
 
-
 module.exports.createFacture = (req,res) =>{
 Facture.create(req.body).then(newFacture=>{
       console.log("New facture", newFacture)
@@ -39,8 +38,6 @@ Facture.create(req.body).then(newFacture=>{
   })
 }
 
-
-// Update Facture
 
 module.exports.updateFacture = (req,res) =>{
 Facture.findByIdAndUpdate(
@@ -55,8 +52,6 @@ Facture.findByIdAndUpdate(
   })
 }
 
-
-// delete Facture  
 
 module.exports.deleteFacture = (req,res) =>{
 Facture.deleteOne(
